@@ -1,0 +1,23 @@
+$bgcolor: aqua;
+$bgcolorlime: lime;
+
+body {
+    background-color: $bgcolor;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 25%;
+}
+
+@mixin limestart ($bgcolorlime){ 
+    background-color: lime;
+    h1 {
+        text-transform: uppercase;
+    }
+}
+
+body {
+    @include limestart ($bgcolorlime);
+}
