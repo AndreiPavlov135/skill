@@ -21,3 +21,19 @@ h1 {
 body {
     @include limestart ($bgcolorlime);
 }
+
+@mixin flex_icon() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .5s;
+}
+
+.img_icon {
+    @include flex_icon();
+} 
+
+.img_invisible {
+    @include flex_icon();
+    opacity: 0;
+}
